@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'vs7m^ux&1^k(!ylkq#tm447ti%t(hzb##e&^-$(t*agwpw!wt1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['statb.maimob.net', '127.0.0.1', '192.168.199.234']
+ALLOWED_HOSTS = ['statb.maimob.net', '127.0.0.1', '192.168.199.234', '47.100.136.167']
 
 
 # Application definition
