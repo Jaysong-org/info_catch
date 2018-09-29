@@ -88,8 +88,8 @@ DATABASES = {
     },
     'db_auth': {
         'ENGINE': 'django.db.backends.mysql',
-        #'NAME': 'db_django',
-        'NAME': 'django_test',
+        'NAME': 'db_django',
+        #'NAME': 'django_test',
         'USER': 'root',
         'PASSWORD': 'maimob123',
         #'PASSWORD': 'songchao',
