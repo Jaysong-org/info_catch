@@ -58,7 +58,7 @@ mkdir -p /data/python/venv/venv_info_catch/uwsgi
 
 
 附录 uwsgi.ini
-
+```
 #mysite_uwsgi.ini file
 [uwsgi]
 
@@ -92,10 +92,12 @@ chmod-socket    = 664
 # clear environment on exit
 vacuum          = true
 
+```
+
 
 附录  info_catch.conf
 
-
+```
 upstream info_catch {
                 server 127.0.0.1:8001;
         }
@@ -114,13 +116,15 @@ server {
                         #proxy_set_header X-Real-IP $remote_addr;
                         #proxy_set_header   Host             $host;
                         #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                        #proxy_pass   http://statb;
+                        #proxy_pass   http://info_catch;
                         #proxy_read_timeout 120;
                         #proxy_ignore_client_abort on;
                         include     uwsgi_params; # the uwsgi_params file you installed
                         uwsgi_pass 127.0.0.1:8001;
                 }
 }
+
+```
 
 
 
